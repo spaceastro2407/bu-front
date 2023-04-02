@@ -7,6 +7,7 @@
     <title>Opportunities</title>
     <link rel="stylesheet" href="libs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/buildingu.css">
     <link rel="stylesheet" href="css/opportunities.css">
     <script src="https://kit.fontawesome.com/dda0a07667.js" crossorigin="anonymous"></script>
 </head>
@@ -14,10 +15,10 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand col-5 p-3" href="#">
             <img src="assets/building_logo_white.png" alt="logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,48 +47,52 @@
     <!-- MAIN CONTENT -->
     <section>
         <!-- SECTION LEFT-->
-        <div class="section-left">
+        <div class="section-left d-flex flex-column align-items-center h-auto">
             <!-- FILTERS -->
-            <div class="filters">                
-                <form>                    
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="checkbox_one">
-                      <label class="form-check-label" for="checkbox_one">1 to 10 day</label>
+            <div class="filters row col-10 mt-3">                
+                <form class="d-flex">                    
+                    <div class="inputs col-8">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="checkbox_one">
+                            <label class="form-check-label" for="checkbox_one">1 to 10 day</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="checkbox_two">
+                              <label class="form-check-label" for="checkbox_two">1 to 3 weeks</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="checkbox_three">
+                              <label class="form-check-label" for="checkbox_three">1 to 6 months</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="checkbox_four">
+                              <label class="form-check-label" for="checkbox_four">6 to 12 months or short regular commitment</label>
+                          </div>
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox_two">
-                        <label class="form-check-label" for="checkbox_two">1 to 3 weeks</label>
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox_three">
-                        <label class="form-check-label" for="checkbox_three">1 to 6 months</label>
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox_four">
-                        <label class="form-check-label" for="checkbox_four">6 to 12 months or short regular commitment</label>
-                      </div>
-                    <button type="submit" class="btn btn-primary">Show me</button>
+                    <div class="buttons col-4 d-flex align-items-end pb-3">
+                        <button type="submit" class="btn btn-primary btn-filters fw-bold">Show me</button>
+                    </div>
                   </form>
             </div>
             <!-- RESOURCE LIST -->
-            <div class="resource-list">
-                <ul>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+            <div class="resource-list col-10 mt-3">
+                <ul role="list">
+                    <li class="resource-container first-resource">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
                                             <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags">
-                                <ul class="flag-list">
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
                                     <li>
                                         <img src="assets/img_uk-flag.png" alt="uk">
                                     </li>
@@ -95,310 +100,372 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
+                    <li class="resource-container">
+                        <div class="resource d-flex justify-content-between py-2">
+                            <div class="title-group d-flex">
+                                <div class="resource-icons d-flex justify-content-start">
+                                    <ul class="icon-list" role="list">
                                         <li>
-                                            <img src="" alt="icon1">
+                                            <i class="fa-solid fa-school"></i>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="title">
+                                <div class="title ps-2">
                                     <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
                                 </div>
                             </div>
-                            <div class="flags"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
-                                        <li>
-                                            <img src="" alt="icon1">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="title">
-                                    <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
-                                </div>
+                            <div class="flags col-1 p-1 ">
+                                <ul class="flag-list" role="list">
+                                    <li>
+                                        <img src="assets/img_uk-flag.png" alt="uk">
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="flags"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resource">
-                            <div class="title-group">
-                                <div class="resource-icons">
-                                    <ul class="icon-list">
-                                        <li>
-                                            <img src="" alt="icon1">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="title">
-                                    <p>CONGRESSIONAL SEMINAR ESSAY CONTEST</p>
-                                </div>
-                            </div>
-                            <div class="flags"></div>
                         </div>
                     </li>
                 </ul>
@@ -432,7 +499,7 @@
             <!-- ARTICLE WRAPPER -->
             <div class="article-wrapper">
                 <!-- CARD ARTICLE-->
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <div class="card-body">
                         <div class="card-header">
                             <div class="resource-title">
@@ -466,7 +533,7 @@
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div>
                 <!-- IMAGES -->
                 <div class="images">
                     <img src="assets/img_resources.png" alt="frontis">
@@ -475,5 +542,6 @@
             </div>
         </div>
     </section>
+    <script src="libs/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </body>
 </html>
