@@ -1,4 +1,32 @@
+/* Coolvetica */
+@font-face {
+  font-family: "Coolvetica";
+  src: url('../assets/fonts/coolvetica/coolvetica\ rg.otf');
+  font-weight: 400;
+}
+
 :root {
   --nav-background: #32a13c;
+  --nav-active-background: #EF7F1A;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: white !important;
+  padding: 7.5% 0;
+  font-family: "Coolvetica", sans-serif;
+}
+
+.nav-link.active, .nav-item:hover {
+  background-color: var(--nav-active-background);
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 

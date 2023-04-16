@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\mockups",
+    "\\mockups\\assets",
+    "\\mockups\\css",
+    "\\mockups\\mockups",
+    "\\mockups\\mockups\\assets",
+    "\\mockups\\mockups\\css"
   ],
+  "SelectedNode": "\\mockups\\mockups\\css\\opportunities.css",
   "PreviewInSolutionExplorer": false
 }

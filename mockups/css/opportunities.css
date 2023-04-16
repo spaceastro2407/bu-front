@@ -29,6 +29,10 @@
   background-color: #e5097f;
 }
 
+.resource-container {
+  cursor: pointer;
+}
+
 .resource-container.first-resource {
   background-color: #e5097f;
 }
